@@ -1,0 +1,33 @@
+{
+  "errors": {
+    "required": "Ovo polje je potrebno.",
+    "usernameShort": "Korisničko ime mora biti duže od 4 znaka.",
+    "usernameLong": "Korisničko ime ne može biti duže od 20 znaka.",
+    "usernameChars": "Samo mala slova i brojevi su dozvoljeni za ovo polje.",
+    "emailInvalid": "Nevaljani Email.",
+    "passwordShort": "Lozinka mora biti minimalno 8 znakova duga.",
+    "passwordDigit": "Lozinka treba imati minimalno 1 broj.",
+    "passwordLowercase": "Lozinka treba imati minimalno 1 malo slovo.",
+    "passwordUppercase": "Lozinka treba imati minimalno 1 veliko slovo.",
+    "passwordSpecialCharacter": "Lozinka treba imati minimalno 1 posebni znak (npr. @, #, $, %, ^...).",
+    "dateOfBirthYoung": "Trebate imati 18 godina ili više.",
+    "emailInUse": "Email se već koristi.",
+    "noResponse": "Zahtjev je poslan, ali odgovor nije primljen.",
+    "otherError": "Nešto nije uredu. Molimo probajte ponovno.",
+    "invalidCredentials": "Nevaljani podaci.",
+    "invalidDate": "Datum nije ispravan.",
+    "error404": "Stranica koju ste tražili nije pronađena.",
+    "btn404": "Vrati me na početnu",
+    "nameShort": "Ime treba imati više od 4 slova.",
+    "nameLong": "Ime ne može imati više od 14 slova.",
+    "lastNameShort": "Prezime treba imati više od 3 slova.",
+    "lastNameLong": "Prezime ne može imati više od 14 slova.",
+    "bioLong": "Bio ne može imati više od 250 znaka.",
+    "locationLong": "Lokacija ne može imati više od 30 slova.",
+    "onlyLetters": "Samo velika i mala slova su dozvoljena za ovo polje."
+  },
+  "success": {
+    "registerSuccess": "Registracija uspješna, možete se sada prijaviti.",
+    "loginSuccess": "Uspješno ste prijavljeni."
+  }
+}

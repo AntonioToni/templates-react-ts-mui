@@ -1,0 +1,19 @@
+{
+  "login": {
+    "loginTitle": "Prijava",
+    "email": "Email",
+    "password": "Lozinka",
+    "loginBtn": "Prijavi se",
+    "forgotPassword": "Zaboravili ste lozinku?",
+    "registerBtn": "Registriraj se"
+  },
+  "register": {
+    "registerTitle": "Registriraj se",
+    "registerCaption": "Brzo i jednostavno",
+    "username": "Korisničko ime",
+    "dateOfBirth": "Datum rođenja",
+    "readTerms": "Pročitao/la sam i slažem se sa",
+    "termsOfService": "Uvjetima korištenja",
+    "haveAccount": "Imate račun? Prijavite se"
+  }
+}

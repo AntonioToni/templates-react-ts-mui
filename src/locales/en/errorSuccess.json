@@ -1,0 +1,33 @@
+{
+  "errors": {
+    "required": "This field is mandatory.",
+    "usernameShort": "Username must have at least 4 characters.",
+    "usernameLong": "Username cannot have more than 20 characters.",
+    "usernameChars": "Only lowercase letters and numbers are allowed for this field.",
+    "invalidEmail": "Invalid Email.",
+    "passwordShort": "Password must be at least 8 characters long.",
+    "passwordDigit": "Your password must contain at least 1 digit.",
+    "passwordLowercase": "Your password must contain at least 1 lowercase character.",
+    "passwordUppercase": "Your password must contain at least 1 uppercase character.",
+    "passwordSpecialCharacter": "Your password must contain at least one special character (@, #, $, %, ^, etc.)",
+    "dateOfBirthYoung": "You must be 18 years or older.",
+    "emailInUse": "Email is already in use.",
+    "noResponse": "The request was made but no response was received.",
+    "otherError": "Something went wrong. Please try again.",
+    "invalidCredentials": "Invalid credentials.",
+    "invalidDate": "Invalid date.",
+    "error404": "Page you were looking for was not found.",
+    "btn404": "Bring me back home",
+    "nameShort": "Name must have at least 3 letters.",
+    "nameLong": "Name cannot have more than 14 letters.",
+    "lastNameShort": "Last name must have at least 3 letters.",
+    "lastNameLong": "Last name cannot have more than 14 letters.",
+    "bioLong": "Bio cannot have more than 250 characters.",
+    "locationLong": "Location cannot have more than 30 characters.",
+    "onlyLetters": "Only uppercase and lowercase letters are allowed for this field."
+  },
+  "success": {
+    "registerSuccess": "Registration successful, you can login now.",
+    "loginSuccess": "Login successful."
+  }
+}

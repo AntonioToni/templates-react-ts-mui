@@ -1,0 +1,19 @@
+{
+  "login": {
+    "loginTitle": "Login",
+    "email": "Email",
+    "password": "Password",
+    "loginBtn": "Log In",
+    "forgotPassword": "Forgot password?",
+    "registerBtn": "Register"
+  },
+  "register": {
+    "registerTitle": "Register",
+    "registerCaption": "Fast & simple",
+    "username": "Username",
+    "dateOfBirth": "Date of birth",
+    "readTerms": "I've read and I agree with",
+    "termsOfService": "Terms of Service",
+    "haveAccount": "Already have an account? Log In"
+  }
+}
