@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import axios, { AxiosError } from 'axios'; // Import Axios
 import { useTranslation } from 'react-i18next';
 import CircularProgress from '@mui/material/CircularProgress';
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
 
 const axiosInstance = axios.create({
   baseURL: 'http://localhost:3050',
@@ -30,7 +30,7 @@ export function Login() {
   const [success, setSuccess] = React.useState('');
 
   // Initialize navigation
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const formik = useFormik({
     initialValues: {
