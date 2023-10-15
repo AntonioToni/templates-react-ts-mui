@@ -185,12 +185,10 @@ export function Register() {
               />
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DesktopDatePicker
-                  // These errors are a non issue, typescript requires adding .toDate() on dayjs()
-                  // adding .toDate() causes the whole component not being renderable due to errors
-                  // @ts-ignore
-                  minDate={dayjs('1950-01-01T12:00:00')}
-                  // @ts-ignore 
-                  maxDate={dayjs()}
+                  // Currently disabled, having issues with AdapterDayjs working with new MUI-X update
+                  // Looking into a fix
+                  // minDate={dayjs('1950-01-01T12:00:00').toDate()}
+                  // maxDate={dayjs()}
                   label={t('register.dateOfBirth')} 
                   format="DD/MM/YYYY"
                   value={formik.values.dateOfBirth}
