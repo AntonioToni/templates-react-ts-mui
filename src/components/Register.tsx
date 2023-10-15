@@ -5,12 +5,12 @@ import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios, { AxiosError } from 'axios';
 import { useTranslation } from 'react-i18next';
 import CircularProgress from '@mui/material/CircularProgress';
+import { DatePicker } from '@mui/x-date-pickers';
 
 dayjs.extend(customParseFormat);
 
@@ -69,10 +69,8 @@ export function Register() {
     setChecked(event.target.checked);
   }
 
-  const handleDateChange = (date: Date | null) => {
-    const formattedDate = date ? dayjs(date).format('YYYY-MM-DD') : null;
-    const parsedDate = formattedDate ? new Date(formattedDate) : null;
-    formik.setFieldValue('dateOfBirth', parsedDate);
+  const handleDateChange = (date: any | null) => {
+    formik.setFieldValue('dateOfBirth', date.$d);
   };
 
   const formik = useFormik({
@@ -184,11 +182,9 @@ export function Register() {
                 helperText={formik.touched.password && t(formik.errors.password || '')}
               />
               <LocalizationProvider dateAdapter={AdapterDayjs}>
-                <DesktopDatePicker
-                  // Currently disabled, having issues with AdapterDayjs working with new MUI-X update
-                  // Looking into a fix
-                  // minDate={dayjs('1950-01-01T12:00:00').toDate()}
-                  // maxDate={dayjs()}
+                <DatePicker
+                  minDate={dayjs('1950-01-01T12:00:00')}
+                  maxDate={dayjs()}
                   label={t('register.dateOfBirth')} 
                   format="DD/MM/YYYY"
                   value={formik.values.dateOfBirth}
