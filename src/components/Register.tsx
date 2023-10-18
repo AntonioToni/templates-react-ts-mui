@@ -23,7 +23,7 @@ const registerSchema = Yup.object().shape({
     .required('errors.required')
     .min(4, 'errors.usernameShort')
     .max(20, 'errors.usernameLong')
-    .matches(/^[a-z0-9]+$/, 'usernameChars'),
+    .matches(/^[a-z0-9]+$/, 'errors.usernameChars'),
   email: Yup.string()
     .required('errors.required')
     .email('errors.invalidEmail'),
@@ -69,6 +69,7 @@ export function Register() {
     setChecked(event.target.checked);
   }
 
+  // Manipulate date here
   const handleDateChange = (date: any | null) => {
     formik.setFieldValue('dateOfBirth', date.$d);
   };
